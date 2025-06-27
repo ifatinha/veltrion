@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://veltrion.com.br" target="_blank"><img src="https://img.shields.io/badge/Site Oficial-Veltrion.tech-blue?style=flat-square&logo=google-chrome"></a>
+  <a href="https://veltrion.com.br" target="_blank"><img src="https://img.shields.io/badge/Site Oficial-Veltrion.com.br-blue?style=flat-square&logo=google-chrome"></a>
   <img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=flat-square">
   <img src="https://img.shields.io/badge/feito%20com-amor-ff69b4?style=flat-square">
 </p>
