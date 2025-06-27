@@ -1,44 +1,71 @@
-# 🚀 Veltrion IT Solutions
+<h1 align="center">
+  🚀 Veltrion IT Solutions
+</h1>
 
-Consultoria em TI, desenvolvimento de sistemas e treinamentos técnicos personalizados. Transformamos desafios tecnológicos em soluções reais para empresas que buscam eficiência, inovação e crescimento.
+<p align="center">
+  <strong>Consultoria em TI • Desenvolvimento de Sistemas • Treinamentos Técnicos</strong><br>
+  <em>Transformando desafios em soluções tecnológicas reais</em>
+</p>
 
----
-
-## 🔧 Serviços
-
-- **Consultoria em Tecnologia da Informação**
-- **Desenvolvimento de Sistemas Web e APIs**
-- **Treinamentos técnicos personalizados (Front-end, Back-end, DevOps e mais)**
-
----
-
-## 🧠 Nossa missão
-
-Ajudar empresas a alcançarem seus objetivos através da tecnologia — com soluções eficientes, seguras e sob medida.
+<p align="center">
+  <a href="https://veltrion.tech" target="_blank"><img src="https://img.shields.io/badge/Site Oficial-Veltrion.tech-blue?style=flat-square&logo=google-chrome"></a>
+  <img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=flat-square">
+  <img src="https://img.shields.io/badge/feito%20com-amor-ff69b4?style=flat-square">
+</p>
 
 ---
 
-## 💻 Tecnologias que dominamos
+## 💼 Sobre nós
 
-- HTML, CSS, JavaScript (ES6+)
-- React, Node.js, Python, PHP
-- MySQL, PostgreSQL, MongoDB
-- Git, Docker, APIs REST
-- Linux, GitHub Actions, CI/CD
+A **Veltrion IT Solutions** é uma empresa brasileira especializada em consultoria de TI, desenvolvimento de sistemas personalizados e treinamentos técnicos voltados à capacitação de equipes e profissionais.
+
+Nosso compromisso é entregar **soluções eficientes, seguras e escaláveis** que acompanhem a evolução do seu negócio.
 
 ---
 
-## 🌐 Saiba mais
+## 🛠 Serviços
 
-- 🌍 Site oficial: [veltrion](https://veltrion.com.br)
-- 📧 Contato: contato@veltrion.com.br
-
----
-
-## ⚙️ Em desenvolvimento
-
-Este repositório está em construção contínua. Em breve, mais projetos, templates e ferramentas desenvolvidas por nossa equipe.
+✅ Consultoria estratégica em TI  
+✅ Desenvolvimento de software sob demanda  
+✅ Treinamentos e workshops técnicos  
+✅ Suporte e otimização de infraestrutura  
+✅ Transformação digital e automações
 
 ---
 
-**© Veltrion IT Solutions – Todos os direitos reservados**
+## 🧑‍💻 Tecnologias que utilizamos
+
+<p align="left">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+</p>
+
+---
+
+## 📫 Contato
+
+- 🌐 Site: [https://veltrion.com.br](https://veltrion.com.br)  
+- 📧 E-mail: [contato@veltrion.tech](mailto:contato@veltrion.tech)  
+- 💼 LinkedIn: (adicione o link da empresa aqui, se tiver)
+
+---
+
+## 🚧 Em desenvolvimento
+
+Este repositório está sendo continuamente atualizado com ferramentas, soluções, templates e projetos desenvolvidos pela equipe Veltrion.
+
+Fique de olho 👀 e ⭐ favorite este repositório para acompanhar as novidades.
+
+---
+
+<p align="center">
+  © 2025 Veltrion IT Solutions – Todos os direitos reservados
+</p>
