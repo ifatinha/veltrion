@@ -92,6 +92,7 @@ body {
 }
 
 body {
+  background-color: #000000;
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   color: #d4d6d7;
@@ -106,13 +107,14 @@ a {
 .burger__button {
   align-items: center;
   display: flex;
-  gap: 8px;
+  gap: 10px;
   justify-content: center;
   background: transparent;
   border: none;
   cursor: pointer;
-  min-height: 52px;
-  min-width: 44px;
+  min-height: 50px;
+  min-width: 48px;
+  padding: 10px;
   transition: 0.5s ease-in-out;
 }
 .burger__button:hover {
@@ -141,28 +143,28 @@ a {
   width: 1px;
 }
 .burger__button-bars {
-  background-color: #000000;
+  background-color: rgb(212, 214, 215);
+  border-radius: 2px;
   display: block;
   height: 2px;
   position: relative;
   transition: all 0.25s linear;
-  width: 22px;
+  width: 30px;
 }
 .burger__button-bars::after, .burger__button-bars::before {
-  background-color: currentColor;
+  background-color: rgb(212, 214, 215);
   content: "";
   display: block;
   height: 100%;
   position: absolute;
-  right: 0;
   transition: all 0.25s linear;
   width: 100%;
 }
 .burger__button-bars::after {
-  transform: translate(0, -8px);
+  transform: translate(0, -10px);
 }
 .burger__button-bars::before {
-  transform: translate(0, 8px);
+  transform: translate(0, 10px);
 }
 
 .burger__active .burger__button-bars {
@@ -177,15 +179,16 @@ a {
 
 .modal {
   color: #ffffff;
-  background: black;
+  background: rgba(0, 0, 0, 0.6);
+  background: #77beff;
   height: 100%;
   inset: 0;
   overflow-y: auto;
-  opacity: 0;
+  opacity: 1;
   position: fixed;
   transform: translateY(-20px);
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
-  visibility: hidden;
+  visibility: visible;
   width: 100%;
   z-index: 1000;
 }
@@ -227,108 +230,58 @@ a {
   width: 100%;
 }
 .navbar__brand {
-  font-family: "Russo One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  min-width: 250px;
 }
-@media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
-  .navbar__list {
-    background: #e7e7e7;
-    flex-direction: column;
-    height: 0px;
-    left: 0;
-    overflow-y: hidden;
-    position: absolute;
-    transition: 0.6s ease-in-out;
-    top: 67px;
-    visibility: hidden;
-    width: 100%;
-    z-index: 1000;
-  }
+.navbar__brand img {
+  height: 60px;
+  vertical-align: middle;
 }
-@media screen and (max-width: calc(768px - 1px)) {
-  .navbar__list {
-    background: #e7e7e7;
-    flex-direction: column;
-    height: 0px;
-    left: 0;
-    overflow-y: hidden;
-    position: absolute;
-    transition: 0.6s ease-in-out;
-    top: 67px;
-    visibility: hidden;
-    width: 100%;
-    z-index: 1000;
-  }
-}
-@media screen and (max-width: 480px) {
-  .navbar__list {
-    background: #e7e7e7;
-    flex-direction: column;
-    height: 0px;
-    left: 0;
-    overflow-y: hidden;
-    position: absolute;
-    transition: 0.6s ease-in-out;
-    top: 67px;
-    visibility: hidden;
-    width: 100%;
-    z-index: 1000;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .navbar__list {
-    align-items: center;
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-  }
+.navbar__menu {
+  display: none;
 }
 @media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
-  .navbar__list {
+  .navbar__menu {
     align-items: center;
     display: flex;
     gap: 1rem;
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: calc(1440px - 1px)) {
-  .navbar__list {
-    height: 0px;
-    visibility: hidden;
+@media screen and (min-width: 1024px) and (max-width: 1367px) and (orientation: landscape) {
+  .navbar__menu {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
   }
 }
-.navbar__list a {
+.navbar__menu .menu__link {
   display: block;
-  padding: 0.5rem;
-  transition: 0.5s ease-in-out;
+  line-height: 28px;
+  padding: 12px 10px;
+  position: relative;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
-.navbar__list a:hover {
-  opacity: 0.5;
+.navbar__menu .menu__link::before {
+  background-image: url("../images/menu-hover.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  content: "";
+  height: 8px;
+  left: -5px;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
 }
-@media screen and (min-width: 768px) and (max-width: calc(1024px - 1px)) {
-  .navbar__list a {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-    margin: 0 1rem;
-    padding: 1rem 0;
-  }
+.navbar__menu .menu__item.active .menu__link,
+.navbar__menu .menu__item .menu__link:hover {
+  color: #77BEFF;
 }
-@media screen and (max-width: calc(768px - 1px)) {
-  .navbar__list a {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-    margin: 0 1rem;
-    padding: 1rem 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .navbar__list a {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-    margin: 0 1rem;
-    padding: 1rem 0;
-  }
+.navbar__menu .menu__item.active .menu__link::before,
+.navbar__menu .menu__item .menu__link:hover::before {
+  opacity: 1;
 }
 
 .navbar--active .navbar__list {
@@ -367,7 +320,7 @@ a {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 1024px) and (orientation: landscape) {
+@media screen and (max-width: 1023px) and (orientation: landscape) {
   .menu__list {
     justify-content: start;
   }
@@ -410,8 +363,12 @@ a {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1rem 2%;
+  position: absolute;
   width: 100%;
+  z-index: 9;
 }
 @media screen and (min-width: 1920px) {
   .header {
@@ -421,8 +378,8 @@ a {
 }
 @media screen and (min-width: 1440px) and (max-width: calc(1920px - 1px)) {
   .header {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 

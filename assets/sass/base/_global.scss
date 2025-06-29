@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    // @include apply-bg-color(pure-black);
+    @include apply-bg-color(pure-black);
     @include font-primary();
     color    : #d4d6d7;
     font-size: get-font-size(18);

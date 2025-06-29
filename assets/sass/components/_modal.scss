@@ -4,15 +4,16 @@
 
 .modal {
     @include apply-color("pure-white");
-    background: rgba($color: #000000, $alpha: 1);
+    background: rgba($color: #000000, $alpha: .6);
+    background: rgba($color: #77BEFF, $alpha: 1);
     height    : 100%;
     inset     : 0;
     overflow-y: auto;
-    opacity   : 0;
+    opacity   : 1;
     position  : fixed;
     transform : translateY(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
-    visibility: hidden;
+    visibility: visible;
     width     : 100%;
     z-index   : 1000;
 
