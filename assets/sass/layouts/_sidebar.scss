@@ -5,7 +5,6 @@
 @use "../global/responsive"as *;
 
 .sidebar {
-    background: linear-gradient(130deg, rgb(54, 99, 216) 0%, rgb(119, 190, 255) 100%);
     bottom    : 0;
     overflow-y: auto;
     padding   : px-to-rem(50);
@@ -49,6 +48,10 @@
         text-transform: uppercase;
         letter-spacing: .2rem;
 
+        @include devices-small-screens {
+            right: 1rem;
+        }
+
         @include hover {
 
             &::after {
@@ -82,8 +85,12 @@
             transform: rotate(-45deg);
         }
     }
+}
 
-    &__description {
+.sidebar__info {
+    background: linear-gradient(130deg, rgb(54, 99, 216) 0%, rgb(119, 190, 255) 100%);
+
+    .sidebar__description {
         @include flex(start, space-between, 50px);
         flex-direction: column;
         margin-top    : px-to-rem(80);
@@ -99,7 +106,7 @@
         }
     }
 
-    &__social-links {
+    .sidebar__social-links {
         @include flex(start, space-between, 15px);
         flex-direction: column;
         width         : 100%;
@@ -119,7 +126,7 @@
         }
     }
 
-    &__contact {
+    .sidebar__contact {
         border-top    : 3px solid get-color("pure-black");
         display       : flex;
         flex-direction: column;
@@ -130,14 +137,17 @@
         .number {
             font-size     : get-font-size(30);
             font-weight   : 600;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
+
+            @include devices-small-screens {
+                font-size: get-font-size(24);
+            }
         }
 
         .text {
             color: rgba(255, 255, 255, 0.8);
         }
     }
-
 }
 
 .sidebar__active {
