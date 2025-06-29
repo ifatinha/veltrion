@@ -1,0 +1,20 @@
+@use "../base/colors"as *;
+@use "../base/typography"as *;
+@use "../base/mixins"as *;
+@use "../global/responsive"as *;
+
+.header {
+    @include flex(center, space-between);
+    padding: 1rem 2%;
+    width  : 100%;
+
+    @include devices(xxl) {
+        padding-left : 5rem;
+        padding-right: 5rem;
+    }
+
+    @include devices(xl) {
+        padding-left : 5rem;
+        padding-right: 5rem;
+    }
+}

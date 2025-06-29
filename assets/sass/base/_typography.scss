@@ -1,0 +1,18 @@
+@use "sass:math";
+@use "sass:map";
+@use "../util/functions"as *;
+
+@mixin font-primary() {
+   font-family        : "Jost", sans-serif;
+   font-optical-sizing: auto;
+}
+
+@mixin russo-one-regular() {
+   font-family: "Russo One", sans-serif;
+   font-weight: 400;
+   font-style : normal;
+}
+
+@function get-font-size($size) {
+   @return px-to-rem($size);
+}
