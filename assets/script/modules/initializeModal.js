@@ -9,21 +9,21 @@ export function getElements() {
   const buttonBurger = document.querySelector("#navbarOpenButton"); // Botão do menu (hambúrguer)
   const modal = document.querySelector("#modal"); // Elemento do modal
   const sidebarInfo = document.querySelector("#sidebarInfo"); // Sidebar lateral
-  const sidebarCloseBtn = document.querySelector("#sidebarCloseBtn"); // Botão de fechar a sidebar
+  const sidebarInfoCloseBtn = document.querySelector("#sidebarInfoCloseBtn"); // Botão de fechar a sidebar
 
   // Se algum elemento não for encontrado, retorna undefined
-  if (!buttonBurger || !modal || !sidebarInfo || !sidebarCloseBtn) {
+  if (!buttonBurger || !modal || !sidebarInfo || !sidebarInfoCloseBtn) {
     console.error("Um ou mais elementos não foram encontrados no DOM");
     return {
       buttonBurger: undefined,
       modal: undefined,
       sidebarInfo: undefined,
-      sidebarCloseBtn: undefined,
+      sidebarInfoCloseBtn: undefined,
     };
   }
 
   // Retorna todos os elementos em um objeto
-  return { buttonBurger, modal, sidebarInfo, sidebarCloseBtn };
+  return { buttonBurger, modal, sidebarInfo, sidebarInfoCloseBtn };
 }
 
 // Função que alterna o estado aberto/fechado do modal, sidebar e botão burger
